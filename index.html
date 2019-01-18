@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+</body>
+<div id='container'>
+    <h1>Book Library</h1>
+    <form id='search'>
+        <input type="text" placeholder='Search Here...'>
+    </form>
+  <div>
+        <table class='table table-bordered table-light'>
+            <thead>
+                <tr>
+                    <td>Title</td>
+                    <td>Author</td>
+                    <td>Pages</td>
+                    <td>Read?</td>
+                    <td>Edit</td>
+                </tr>
+            </thead>
+            <tbody id='tbody' class='thead-light'>
+              <tr>
+                  <td class='title'>Think Big</td>
+                  <td class='author'>Ben Carson</td>
+                  <td class='pages'>231</td>
+                  <td class='btn-primary'>Yes</td>
+                  <td class='delete btn btn-success'>Delete</td>
+              </tr>
+
+            </tbody>
+        </table>
+
+        <button id='addbk'>Add Book</button>
+        <form action="#" id='addForm' class='dis'>
+    <div id='form2'> 
+        <div id='writeInfo'>
+            <label>Book Title :</label>
+            <input id='title' type="text" placeholder="Name of Book" name="bookname"  >
+            <br/>
+            <label>Author:</label>
+            <input id='author' type="text" placeholder="Author" name="author" required>
+            <br/>
+            <label>Pages :</label>
+            <input id='pages' type="number" placeholder="" name="pages" required>
+            <br/>
+        </div>
+        <div id='clickInfo'>
+            <label>Reading Status</label>
+            <br/>
+            <input type="radio" placeholder="" name="reading" value='Yes'> Read
+            <br/>      
+            <input type="radio" placeholder="" name="reading" value='No'> Not read
+            <br/>
+            <input type="radio" placeholder="" name="reading" value='On it'> Reading
+            <br/>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </div>    
+        </form>
+    </div>
+
+
+    <script type='text/javascript' rel='stylesheet' src='./js/index.js'></script>
+</div>
+</body>
+</html>

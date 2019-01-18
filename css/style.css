@@ -1,0 +1,33 @@
+html {
+    box-sizing: border-box;
+}
+
+#container{
+    width: 70vw;
+    height: auto;
+    background-color: aliceblue;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.dis {
+    display: none;
+}
+#form2 {
+    display: flex;
+    justify-content: space-around;
+}
+#writeInfo {
+    padding: 20px;
+    line-height: 30px;
+}
+
+h1{
+    text-align: center;
+}
+
+#search > input {
+    width: 60vw;
+    margin: 20px;
+}
